@@ -1,2 +1,3 @@
 # hello-world
-learning git concept
+learning git concept.
+nice but a little confusing
