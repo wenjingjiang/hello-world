@@ -11,7 +11,7 @@ body:
       label: Major Version
       description: Choose a version
       options:
-        - MVPDemo
+        - MVP-Demo
         - MVP
         - Anesthesia-Machine-Exam
       validations:
