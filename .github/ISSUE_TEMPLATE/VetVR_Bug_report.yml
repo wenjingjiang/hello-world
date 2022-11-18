@@ -11,7 +11,7 @@ body:
       label: Major Version
       description: 
       options:
-        - MVP Demo
+        - MVP-Demo
         - MVP
         - Anesthesia Machine Exam
         required: true
