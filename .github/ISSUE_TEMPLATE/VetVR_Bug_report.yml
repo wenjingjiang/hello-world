@@ -1,4 +1,4 @@
-name: VetVR Bug Report
+name: "VetVR Bug Report"
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
