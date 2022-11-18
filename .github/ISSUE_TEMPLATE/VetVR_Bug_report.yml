@@ -13,7 +13,7 @@ body:
       options:
         - MVP-Demo
         - MVP
-        - Anesthesia Machine Exam
+        - Anesthesia-Machine-Exam
         required: true
   - type: checkboxes
     id: cat-preferences
