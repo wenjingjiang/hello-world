@@ -5,7 +5,54 @@ labels: ["bug", "triage"]
 assignees:
   - E Fraire, Logan Arikaki, Morgan Jones, Wenjing Jiang
 body:
-  - type: markdown
+  - type: dropdown
+    id: major-version
+    attributes:
+      label: Major Version
+      description: 
+      options:
+        - MVP Demo
+        - MVP
+        - Anesthesia Machine Exam
+        required: true
+  - type: checkboxes
+    id: cat-preferences
+    attributes:
+      label: What kinds of cats do you like?
+      description: You may select more than one.
+      options:
+        - label: Orange cat (required. Everyone likes orange cats.)
+          required: true
+        - label: **Black cat**
+  - type: dropdown
+    id: scene
+    attributes:
+      label: Scene
+      description: What scene are you in?
+      options:
+        - Lobby
+        - Medicine Dose
+        - Stethscope
+        - Porcupine Scenario
+        - Wrist Diagnostics
+        - Laceration Scenario
+        - Mooncake Scenario
+        - Atlas Scenario
+    validations:
+      required: true
+  - type: dropdown
+    id: issuetype
+    attributes:
+      label: Issue Type
+      description: What scene are you in?
+      options:
+        - Immersion
+        - Quality of Life
+        - UX/UI
+        - Level Progression
+    validations:
+      required: true
+ - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
