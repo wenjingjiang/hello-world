@@ -1,8 +1,8 @@
-name:"VetVR Bug Report"
-description:"File a bug report"
-title:"[Bug]:"
-labels:["bug", "triage"]
-assignees:[E Fraire,Logan Arikaki,Morgan Jones, Wenjing Jiang]
+name: "VetVR Bug Report"
+description: "File a bug report"
+title: "Bug"
+labels: "Bug"
+
 body:
 - type: dropdown
   id: major-version
