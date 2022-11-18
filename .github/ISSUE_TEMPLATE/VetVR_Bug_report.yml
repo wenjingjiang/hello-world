@@ -10,100 +10,80 @@ body:
     label: Major Version
     description: Choose a version
     options:
-        - MVP-Demo
-        - MVP
-        - Anesthesia-Machine-Exam
-      validations:
+      - MVP-Demo
+      - MVP
+      - Anesthesia-Machine-Exam
+    validations:
         required: true
-  - type: checkboxes
-    id: cat-preferences
-    attributes:
-      label: What kinds of cats do you like?
-      description: You may select more than one.
-      options:
+- type: checkboxes
+  id: cat-preferences
+  attributes:
+    label: What kinds of cats do you like?
+    description: You may select more than one.
+    options:
         - label: Orange cat (required. Everyone likes orange cats.)
           required: true
         - label: Black cat
-  - type: dropdown
-    id: scene
-    attributes:
-      label: Scene
-      description: What scene are you in?
-      options:
-        - Lobby
-        - Medicine Dose
-        - Stethscope
-        - Porcupine Scenario
-        - Wrist Diagnostics
-        - Laceration Scenario
-        - Mooncake Scenario
-        - Atlas Scenario
+- type: dropdown
+  id: scene
+  attributes:
+    label: Scene
+    description: What scene are you in?
+    options:
+      - Lobby
+      - Medicine Dose
+      - Stethscope
+      - Porcupine Scenario
+      - Wrist Diagnostics
+      - Laceration Scenario
+      - Mooncake Scenario
+      - Atlas Scenario
     validations:
       required: true
-  - type: dropdown
-    id: issuetype
-    attributes:
-      label: Issue Type
-      description: What scene are you in?
-      options:
-        - Immersion
-        - Quality of Life
-        - UX/UI
-        - Level Progression
+- type: dropdown
+  id: issuetype
+  attributes:
+    label: Issue Type
+    description: What scene are you in?
+    options:
+      - Immersion
+      - Quality of Life
+      - UX/UI
+      - Level Progression
     validations:
       required: true
- - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+- type: markdown
+  attributes:
+    value: |
+       Thanks for taking the time to fill out this bug report!
+- type: input
+  id: contact
+  attributes:
+    label: Contact Details
+    description: How can we get in touch with you if we need more info?
+    placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+- type: textarea
+  id: what-happened
+  attributes:
+    label: What happened?
+    description: Also tell us, what did you expect to happen?
+    placeholder: Tell us what you see!
+    value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+- type: textarea
+  id: logs
+  attributes:
+    label: Relevant log output
+    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+    render: shell
+- type: checkboxes
+  id: terms
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+    options:
+      - label: I agree to follow this project's Code of Conduct
+        required: true
