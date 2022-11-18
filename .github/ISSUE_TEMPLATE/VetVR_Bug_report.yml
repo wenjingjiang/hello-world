@@ -9,9 +9,9 @@ body:
     id: major-version
     attributes:
       label: Major Version
-      description: 
+      description: Choose a version
       options:
-        - MVP-Demo
+        - MVPDemo
         - MVP
         - Anesthesia-Machine-Exam
         required: true
