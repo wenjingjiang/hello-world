@@ -15,6 +15,11 @@ body:
       - Anesthesia Machine Exam
   validations:
     required: true
+- type: input
+  id: minorversion
+  attributes:
+    label: Minor Version
+    description: Put down minor version if there is one
 - type: dropdown
   id: headset
   attributes:
