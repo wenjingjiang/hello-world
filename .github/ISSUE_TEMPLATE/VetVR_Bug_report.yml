@@ -16,7 +16,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: Headset
+  id: headset
   attributes:
     label: Headset
     description: Choose a headset
@@ -104,16 +104,6 @@ body:
       - Not Reproducible
   validations:
     required: true
-- type: dropdown
-  id: version
-  attributes:
-    label: Version
-    description: What version of our software are you running?
-    options:
-      - 1.0.2 (Default)
-      - 1.0.3 (Edge)
-  validations:
-    required: true
 - type: markdown
   attributes:
     value: |
@@ -132,5 +122,4 @@ body:
   attributes:
     label: Notes
     description: Leave your notes here
-    placeholder: 
-    value: "Leave any helpful notes here"
+    placeholder: "Leave any helpful notes here"
