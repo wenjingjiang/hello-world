@@ -1,9 +1,20 @@
 name: "VetVR Bug Report"
 description: "File a bug report"
-title: "bug"
-labels: "bug"
+title: "Bug"
+labels: "Bug"
 
 body:
+- type: dropdown
+  id: major-version
+  attributes:
+    label: Major Version
+    description: Choose a version
+    options:
+      - MVP Demo
+      - MVP
+      - Anesthesia Machine Exam
+  validations:
+    required: true
 - type: dropdown
   id: Headset
   attributes:
@@ -70,6 +81,7 @@ body:
     label: What happened?
     description: Also tell us, what did you expect to happen?
     placeholder: Tell us what you see!
+    value: 
   validations:
     required: true
 - type: textarea
@@ -92,6 +104,16 @@ body:
       - Not Reproducible
   validations:
     required: true
+- type: dropdown
+  id: version
+  attributes:
+    label: Version
+    description: What version of our software are you running?
+    options:
+      - 1.0.2 (Default)
+      - 1.0.3 (Edge)
+  validations:
+    required: true
 - type: markdown
   attributes:
     value: |
@@ -105,10 +127,10 @@ body:
       - label: E
       - label: Logan
       - label: Morgan
-      - Label: Wenjing
 - type: textarea
   id: notes
   attributes:
     label: Notes
     description: Leave your notes here
-    placeholder: "Leave any helpful notes here"
+    placeholder: 
+    value: "Leave any helpful notes here"
