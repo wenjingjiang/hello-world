@@ -1,6 +1,6 @@
 name: "VetVR Bug Report"
 description: "File a bug report"
-title: ""
+
 body:
 - type: dropdown
   id: major-version
@@ -13,7 +13,7 @@ body:
       - Anesthesia Machine Exam
   validations:
     required: true
-- type: input
+- type: textarea
   id: minor-version
   attributes:
     label: Minor Version
