@@ -1,0 +1,129 @@
+name: "VetVR Bug Report"
+description: "File a bug report"
+title: "bug"
+
+body:
+- type: dropdown
+  id: major-version
+  attributes:
+    label: Major Version
+    description: Choose a version
+    options:
+      - MVP Demo
+      - MVP
+      - Anesthesia Machine Exam
+  validations:
+    required: true
+- type: textarea
+  id: minorversion
+  attributes:
+    label: Minor Version
+    description: Put down minor version if there is one
+- type: dropdown
+  id: Headset
+  attributes:
+    label: Headset
+    description: Choose a headset
+    options:
+      - HP reverb G2
+      - Oculus Quest II and newer generations (tethered) 
+      - Samsung Odyssey 
+      - Valve Index 
+      - Vive HTC1 and newer generations
+  validations:
+    required: true
+- type: dropdown
+  id: scene
+  attributes:
+    label: Scene
+    description: What scene are you in?
+    options:
+      - Lobby
+      - Palperbral Reflex
+      - ECG
+      - Stethscope
+      - Medicine Dose
+      - Ultrasound
+      - Porcupine Scenario
+      - Wrist Diagnostics
+      - Laceration Scenario
+      - Mooncake Scenario
+      - Atlas Scenario
+      - Other
+  validations:
+    required: true
+- type: dropdown
+  id: issuetype
+  attributes:
+    label: Issue Type
+    description: What kind of issues?
+    options:
+      - Animation
+      - Immersion
+      - Level Progression
+      - Quality of Life
+      - UX/UI
+      - Others
+  validations:
+    required: true
+- type: dropdown
+  id: issuepriority
+  attributes:
+    label: Issue Priority
+    description: 
+    options:
+      - Road Blocking
+      - Critical
+      - High
+      - Medium
+      - Low
+  validations:
+    required: true
+- type: textarea
+  id: what-happened
+  attributes:
+    label: What happened?
+    description: Also tell us, what did you expect to happen?
+    placeholder: Tell us what you see!
+  validations:
+    required: true
+- type: textarea
+  id: logs
+  attributes:
+    label: Relevant log output
+    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+    render: shell
+- type: dropdown
+  id: issuestatus
+  attributes:
+    label: Issue Status
+    description: 
+    options:
+      - Submitted
+      - Pending Review
+      - Completed
+      - Deleted
+      - Works as Designed
+      - Not Reproducible
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+       Thanks for taking the time to fill out this bug report!
+- type: checkboxes
+  id: developers
+  attributes:
+    label: Developer(s) assigned
+    description: You may select more than one.
+    options:
+      - label: E
+      - label: Logan
+      - label: Morgan
+      - Label: Wenjing
+- type: textarea
+  id: notes
+  attributes:
+    label: Notes
+    description: Leave your notes here
+    placeholder: "Leave any helpful notes here"
