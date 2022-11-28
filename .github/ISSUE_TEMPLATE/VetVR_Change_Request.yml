@@ -1,6 +1,5 @@
 name: "VetVR Chaneg Request Report"
 description: "File a change request report"
-title: "change request"
 
 body:
 - type: dropdown
