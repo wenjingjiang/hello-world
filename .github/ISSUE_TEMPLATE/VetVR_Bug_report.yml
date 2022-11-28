@@ -102,7 +102,7 @@ body:
       - Deleted
       - Works as Designed
       - Not Reproducible
- validations:
+  validations:
     required: true
 - type: dropdown
   id: version
