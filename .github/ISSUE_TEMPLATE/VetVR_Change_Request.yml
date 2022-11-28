@@ -14,7 +14,7 @@ body:
   validations:
     required: true
 - type: input
-  id: minorversion
+  id: minor-version
   attributes:
     label: Minor Version
     description: Put down minor version if there is one
@@ -51,7 +51,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: changerequestarea
+  id: change-request-area
   attributes:
     label: Change Request Area
     description: 
@@ -78,12 +78,12 @@ body:
   attributes:
     label: What are you looking to change?
     description: 
-    placeholder: Tell us how yu wnat this work!
+    placeholder: Tell us how you want this work!
     value: 
   validations:
     required: true
 - type: dropdown
-  id: issuestatus
+  id: issue-status
   attributes:
     label: Issue Status
     description: 
