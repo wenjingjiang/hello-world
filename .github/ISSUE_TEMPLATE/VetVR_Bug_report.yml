@@ -1,7 +1,6 @@
 name: "VetVR Bug Report"
 description: "File a bug report"
 title: "bug"
-
 body:
 - type: dropdown
   id: major-version
