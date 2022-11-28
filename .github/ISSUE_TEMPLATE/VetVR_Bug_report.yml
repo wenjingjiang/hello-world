@@ -14,7 +14,7 @@ body:
   validations:
     required: true
 - type: input
-  id: minorversion
+  id: mino-rversion
   attributes:
     label: Minor Version
     description: Put down minor version if there is one
@@ -52,7 +52,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: issuetype
+  id: issue-type
   attributes:
     label: Issue Type
     description: What kind of issues?
@@ -66,7 +66,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: issuepriority
+  id: issue-priority
   attributes:
     label: Issue Priority
     description: 
@@ -94,7 +94,7 @@ body:
     description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
     render: shell
 - type: dropdown
-  id: issuestatus
+  id: issue-status
   attributes:
     label: Issue Status
     description: 
