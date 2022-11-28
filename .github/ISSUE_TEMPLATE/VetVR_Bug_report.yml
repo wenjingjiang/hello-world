@@ -10,29 +10,20 @@ body:
     label: Major Version
     description: Choose a version
     options:
-      - MVP-Demo
+      - MVP Demo
       - MVP
-      - Anesthesia-Machine-Exam
+      - Anesthesia Machine Exam
 - type: dropdown
   id: Headset
   attributes:
     label: Headset
     description: Choose a headset
     options:
-      - HP reverb G2 
-      - Vive HTC1 and newer generations 
-      - Samsun Odyssey 
+      - HP reverb G2
       - Oculus Quest II and newer generations (tethered) 
+      - Samsung Odyssey 
       - Valve Index 
-- type: checkboxes
-  id: cat-preferences
-  attributes:
-    label: What kinds of cats do you like?
-    description: You may select more than one.
-    options:
-      - label: Orange cat (required. Everyone likes orange cats.)
-        required: true
-      - label: Black cat
+      - Vive HTC1 and newer generations
 - type: dropdown
   id: scene
   attributes:
@@ -54,22 +45,25 @@ body:
   id: issuetype
   attributes:
     label: Issue Type
-    description: What scene are you in?
+    description: What kind of issues?
     options:
+      - Animation
       - Immersion
+      - Level Progression
       - Quality of Life
       - UX/UI
-      - Level Progression
-- type: markdown
+      - Others
+- type: dropdown
+  id: issuepriority
   attributes:
-    value: |
-       Thanks for taking the time to fill out this bug report!
-- type: input
-  id: contact
-  attributes:
-    label: Contact Details
-    description: How can we get in touch with you if we need more info?
-    placeholder: ex. email@example.com
+    label: Issue Priority
+    description: 
+    options:
+      - Road Blocking
+      - Critical
+      - High
+      - Medium
+      - Low
 - type: textarea
   id: what-happened
   attributes:
@@ -83,11 +77,48 @@ body:
     label: Relevant log output
     description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
     render: shell
-- type: checkboxes
-  id: terms
+- type: markdown
   attributes:
-    label: Code of Conduct
-    description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+    value: |
+       Thanks for taking the time to fill out this bug report!
+- type: input
+  id: contact
+  attributes:
+    label: Contact Details
+    description: How can we get in touch with you if we need more info?
+    placeholder: ex. email@example.com
+- type: checkboxes
+  id: developers
+  attributes:
+    label: Developer(s) assigned
+    description: You may select more than one.
     options:
-      - label: I agree to follow this project's Code of Conduct
-        required: true
+      - label: E
+      - label: Logan
+      - label: Morgan
+- type: dropdown
+  id: issuestatus
+  attributes:
+    label: Issue Status
+    description: 
+    options:
+      - Submitted
+      - Pending Review
+      - Completed
+      - Deleted
+      - Works as Designed
+      - Not Reproducible
+- type: textarea
+  id: notes
+  attributes:
+    label: Notes
+    description: Leave your comments here
+    placeholder: 
+    value: "A bug happened!"
+
+- type: textarea
+  id: logs
+  attributes:
+    label: Relevant log output
+    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+    render: shell
