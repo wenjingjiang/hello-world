@@ -102,6 +102,8 @@ body:
       - Deleted
       - Works as Designed
       - Not Reproducible
+ validations:
+    required: true
 - type: dropdown
   id: version
   attributes:
