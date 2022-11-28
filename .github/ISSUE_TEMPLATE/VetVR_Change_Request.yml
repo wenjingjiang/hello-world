@@ -30,13 +30,12 @@ body:
       - Samsung Odyssey 
       - Valve Index 
       - Vive HTC1 and newer generations
-  validations:
-    required: true
+      
 - type: dropdown
   id: scene
   attributes:
     label: Scene
-    description: What scene are you in?
+    description: What scene are you talking about?
     options:
       - Lobby
       - Palperbral Reflex
@@ -53,10 +52,10 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: issuetype
+  id: changerequestarea
   attributes:
-    label: Issue Type
-    description: What kind of issues?
+    label: Change Request Area
+    description: 
     options:
       - Animation
       - Immersion
@@ -67,33 +66,23 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: issuepriority
+  id: changerequestpriority
   attributes:
-    label: Issue Priority
+    label: Change Request Priority
     description: 
     options:
-      - Road Blocking
-      - Critical
       - High
       - Medium
       - Low
-  validations:
-    required: true
 - type: textarea
-  id: what-happened
+  id: what-to-change
   attributes:
-    label: What happened?
-    description: Also tell us, what did you expect to happen?
-    placeholder: Tell us what you see!
+    label: What are you looking to change?
+    description: 
+    placeholder: Tell us how yu wnat this work!
     value: 
   validations:
     required: true
-- type: textarea
-  id: logs
-  attributes:
-    label: Relevant log output
-    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-    render: shell
 - type: dropdown
   id: issuestatus
   attributes:
@@ -111,7 +100,7 @@ body:
 - type: markdown
   attributes:
     value: |
-       Thanks for taking the time to fill out this bug report!
+       Thanks for taking the time to fill out this change request report!
 - type: checkboxes
   id: developers
   attributes:
