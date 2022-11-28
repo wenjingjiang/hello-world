@@ -18,7 +18,6 @@ body:
   attributes:
     label: Minor Version
     description: Put down minor version if there is one
-    placeholder: 
 - type: dropdown
   id: Headset
   attributes:
