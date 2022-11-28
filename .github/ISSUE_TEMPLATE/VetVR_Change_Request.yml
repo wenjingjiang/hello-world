@@ -1,4 +1,4 @@
-name: "VetVR Change Request Report"
+name: "VetVR Chaneg Request Report"
 description: "File a change request report"
 title: "change request"
 
@@ -14,13 +14,13 @@ body:
       - Anesthesia Machine Exam
   validations:
     required: true
-- type: textarea
+- type: input
   id: minorversion
   attributes:
     label: Minor Version
     description: Put down minor version if there is one
 - type: dropdown
-  id: Headset
+  id: headset
   attributes:
     label: Headset
     description: Choose a headset
@@ -85,6 +85,7 @@ body:
     label: What happened?
     description: Also tell us, what did you expect to happen?
     placeholder: Tell us what you see!
+    value: 
   validations:
     required: true
 - type: textarea
@@ -120,7 +121,6 @@ body:
       - label: E
       - label: Logan
       - label: Morgan
-      - Label: Wenjing
 - type: textarea
   id: notes
   attributes:
