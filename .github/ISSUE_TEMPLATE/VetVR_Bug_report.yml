@@ -6,7 +6,7 @@ body:
 - type: dropdown
   id: major-version
   attributes:
-    label: Major Version
+    label: "Major Version"
     description: Choose a version
     options:
       - MVP Demo
