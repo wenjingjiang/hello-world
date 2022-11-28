@@ -6,7 +6,7 @@ body:
 - type: dropdown
   id: major-version
   attributes:
-    label: "Major Version"
+    label: Major Version
     description: Choose a version
     options:
       - MVP Demo
@@ -15,7 +15,7 @@ body:
   validations:
     required: true
 - type: textarea
-  id: minor-version
+  id: minorversion
   attributes:
     label: Minor Version
     description: Put down minor version if there is one
