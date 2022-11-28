@@ -13,6 +13,17 @@ body:
       - MVP-Demo
       - MVP
       - Anesthesia-Machine-Exam
+- type: dropdown
+  id: Headset
+  attributes:
+    label: Headset
+    description: Choose a headset
+    options:
+      - HP reverb G2 
+      - Vive HTC1 and newer generations 
+      - Samsun Odyssey 
+      - Oculus Quest II and newer generations (tethered) 
+      - Valve Index 
 - type: checkboxes
   id: cat-preferences
   attributes:
@@ -29,8 +40,11 @@ body:
     description: What scene are you in?
     options:
       - Lobby
-      - Medicine Dose
+      - Palperbral Reflex
+      - ECG
       - Stethscope
+      - Medicine Dose
+      - Ultrasound
       - Porcupine Scenario
       - Wrist Diagnostics
       - Laceration Scenario
