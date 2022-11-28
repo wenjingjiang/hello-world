@@ -1,6 +1,6 @@
-name: "VetVR Bug Report"
-description: "File a bug report"
-title: "bug"
+name: "VetVR Change Request Report"
+description: "File a change request report"
+title: "change request"
 
 body:
 - type: dropdown
