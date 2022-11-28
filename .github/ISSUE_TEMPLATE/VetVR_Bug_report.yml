@@ -4,17 +4,6 @@ title: "bug"
 
 body:
 - type: dropdown
-  id: major-version
-  attributes:
-    label: Major Version
-    description: Choose a version
-    options:
-      - MVP Demo
-      - MVP
-      - Anesthesia Machine Exam
-  validations:
-    required: true
-- type: dropdown
   id: Headset
   attributes:
     label: Headset
