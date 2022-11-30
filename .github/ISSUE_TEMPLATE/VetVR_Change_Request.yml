@@ -100,15 +100,6 @@ body:
   attributes:
     value: |
        Thanks for taking the time to fill out this change request report!
-- type: checkboxes
-  id: developers
-  attributes:
-    label: Developer(s) assigned
-    description: You may select more than one.
-    options:
-      - label: E
-      - label: Logan
-      - label: Morgan
 - type: textarea
   id: notes
   attributes:
